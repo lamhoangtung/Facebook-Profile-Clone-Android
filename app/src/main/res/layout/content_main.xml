@@ -5,6 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
+    <!--Todo: Change top bar to search-->
 
     <android.support.constraint.ConstraintLayout
 
@@ -150,6 +151,8 @@
             app:layout_constraintStart_toStartOf="@id/ic_others"
             app:layout_constraintTop_toBottomOf="@id/ic_others" />
 
+        <!--Todo: Make some text BOLD-->
+
         <ImageView
             android:id="@+id/ic_work"
             android:layout_width="@dimen/small_icon_size"
@@ -259,6 +262,7 @@
             app:layout_constraintLeft_toRightOf="@id/ic_from"
             app:layout_constraintTop_toBottomOf="@+id/live" />
 
+        <!--Todo: Add Border to Images-->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -322,6 +326,8 @@
             </LinearLayout>
 
         </LinearLayout>
+
+        <!--Todo: Add some button-->
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
