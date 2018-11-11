@@ -8,249 +8,255 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <ImageView
-        android:id="@+id/banner"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:clickable="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/poster"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/photo"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="100dp"
-        android:clickable="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/avatar"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/poster"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:text="Hoàng Tùng Lâm (lht)"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/photo" />
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:paddingBottom="24dp"
-        android:text="I love Machine Learning!"
-        android:textSize="@dimen/small_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="Hoàng Tùng Lâm (lht)"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/photo" />
 
-    <ImageView
-        android:id="@+id/ic_newpost"
-        android:layout_width="@dimen/small_icon_size"
-        android:layout_height="@dimen/small_icon_size"
-        android:clickable="true"
-        android:src="@drawable/newpost"
-        app:layout_constraintEnd_toStartOf="@+id/ic_editprofile"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/status" />
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:paddingBottom="24dp"
+            android:text="I love Machine Learning!"
+            android:textSize="@dimen/small_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
 
-    <TextView
-        android:id="@+id/newpost"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Đăng"
-        app:layout_constraintEnd_toEndOf="@id/ic_newpost"
-        app:layout_constraintStart_toStartOf="@id/ic_newpost"
-        app:layout_constraintTop_toBottomOf="@id/ic_newpost" />
+        <ImageView
+            android:id="@+id/ic_newpost"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
+            android:clickable="true"
+            android:src="@drawable/newpost"
+            app:layout_constraintEnd_toStartOf="@+id/ic_editprofile"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status" />
 
-    <ImageView
-        android:id="@+id/ic_editprofile"
-        android:layout_width="@dimen/small_icon_size"
-        android:layout_height="@dimen/small_icon_size"
-        android:clickable="true"
-        android:src="@drawable/editprofile"
-        app:layout_constraintEnd_toStartOf="@+id/ic_usagelog"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ic_newpost"
-        app:layout_constraintTop_toBottomOf="@id/status" />
+        <TextView
+            android:id="@+id/newpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Đăng"
+            app:layout_constraintEnd_toEndOf="@id/ic_newpost"
+            app:layout_constraintStart_toStartOf="@id/ic_newpost"
+            app:layout_constraintTop_toBottomOf="@id/ic_newpost" />
 
-    <TextView
-        android:id="@+id/editprofile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:gravity="center"
-        android:text="Chỉnh sửa\n trang cá nhân"
-        app:layout_constraintEnd_toEndOf="@id/ic_editprofile"
-        app:layout_constraintStart_toStartOf="@id/ic_editprofile"
-        app:layout_constraintTop_toBottomOf="@id/ic_editprofile" />
+        <ImageView
+            android:id="@+id/ic_editprofile"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
+            android:clickable="true"
+            android:src="@drawable/editprofile"
+            app:layout_constraintEnd_toStartOf="@+id/ic_usagelog"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ic_newpost"
+            app:layout_constraintTop_toBottomOf="@id/status" />
 
-    <ImageView
-        android:id="@+id/ic_usagelog"
-        android:layout_width="@dimen/small_icon_size"
-        android:layout_height="@dimen/small_icon_size"
-        android:clickable="true"
-        android:src="@drawable/usagelog"
-        app:layout_constraintEnd_toStartOf="@+id/ic_others"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ic_editprofile"
-        app:layout_constraintTop_toBottomOf="@id/status" />
+        <TextView
+            android:id="@+id/editprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Chỉnh sửa\n trang cá nhân"
+            app:layout_constraintEnd_toEndOf="@id/ic_editprofile"
+            app:layout_constraintStart_toStartOf="@id/ic_editprofile"
+            app:layout_constraintTop_toBottomOf="@id/ic_editprofile" />
 
-    <TextView
-        android:id="@+id/usagelog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:gravity="center"
-        android:text="Nhật ký hoạt\n động"
-        app:layout_constraintEnd_toEndOf="@id/ic_usagelog"
-        app:layout_constraintStart_toStartOf="@id/ic_usagelog"
-        app:layout_constraintTop_toBottomOf="@id/ic_usagelog" />
+        <ImageView
+            android:id="@+id/ic_usagelog"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
+            android:clickable="true"
+            android:src="@drawable/usagelog"
+            app:layout_constraintEnd_toStartOf="@+id/ic_others"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ic_editprofile"
+            app:layout_constraintTop_toBottomOf="@id/status" />
 
-    <ImageView
-        android:id="@+id/ic_others"
-        android:layout_width="@dimen/small_icon_size"
-        android:layout_height="@dimen/small_icon_size"
-        android:clickable="true"
-        android:src="@drawable/others"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ic_usagelog"
-        app:layout_constraintTop_toBottomOf="@id/status" />
+        <TextView
+            android:id="@+id/usagelog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Nhật ký hoạt\n động"
+            app:layout_constraintEnd_toEndOf="@id/ic_usagelog"
+            app:layout_constraintStart_toStartOf="@id/ic_usagelog"
+            app:layout_constraintTop_toBottomOf="@id/ic_usagelog" />
 
-    <TextView
-        android:id="@+id/others"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:gravity="center"
-        android:text="Khác"
-        app:layout_constraintEnd_toEndOf="@id/ic_others"
-        app:layout_constraintStart_toStartOf="@id/ic_others"
-        app:layout_constraintTop_toBottomOf="@id/ic_others" />
+        <ImageView
+            android:id="@+id/ic_others"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
+            android:clickable="true"
+            android:src="@drawable/others"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ic_usagelog"
+            app:layout_constraintTop_toBottomOf="@id/status" />
 
-    <ImageView
-        android:id="@+id/ic_work"
-        android:layout_width="@dimen/small_icon_size"
-        android:layout_height="@dimen/small_icon_size"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/ic_work_black_24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/work"
-        app:layout_constraintTop_toBottomOf="@+id/editprofile" />
+        <TextView
+            android:id="@+id/others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Khác"
+            app:layout_constraintEnd_toEndOf="@id/ic_others"
+            app:layout_constraintStart_toStartOf="@id/ic_others"
+            app:layout_constraintTop_toBottomOf="@id/ic_others" />
 
-    <TextView
-        android:id="@+id/work"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AI &amp; Machine Learning Intern tại ZINZA Technology"
-        android:textSize="@dimen/small_text_size"
-        app:layout_constraintBottom_toTopOf="@+id/university"
-        app:layout_constraintLeft_toRightOf="@id/ic_work"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editprofile" />
+        <ImageView
+            android:id="@+id/ic_work"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/ic_work_black_24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/work"
+            app:layout_constraintTop_toTopOf="@id/work" />
 
-    <ImageView
-        android:id="@+id/ic_university"
-        android:layout_width="@dimen/small_icon_size"
-        android:layout_height="@dimen/small_icon_size"
-        android:layout_marginTop="24dp"
-        android:src="@drawable/ic_study_black_24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/work"
-        app:layout_constraintTop_toBottomOf="@+id/ic_work" />
+        <TextView
+            android:id="@+id/work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="24dp"
+            android:text="AI &amp; Machine Learning Intern tại ZINZA Technology"
+            android:textSize="@dimen/small_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/university"
+            app:layout_constraintLeft_toRightOf="@id/ic_work"
+            app:layout_constraintTop_toBottomOf="@+id/editprofile" />
 
-    <TextView
-        android:id="@+id/university"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:text="Học Computer Science tại Đại học Công Nghiệp\n Hà Nội (HAUI)"
-        android:textSize="@dimen/small_text_size"
-        app:layout_constraintBottom_toTopOf="@+id/highschool"
-        app:layout_constraintLeft_toRightOf="@id/ic_university"
-        app:layout_constraintTop_toBottomOf="@+id/work" />
+        <ImageView
+            android:id="@+id/ic_university"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_study_black_24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/work"
+            app:layout_constraintTop_toTopOf="@+id/university" />
 
-    <ImageView
-        android:id="@+id/ic_highschool"
-        android:layout_width="@dimen/small_icon_size"
-        android:layout_height="@dimen/small_icon_size"
-        android:layout_marginLeft="6dp"
-        android:layout_marginTop="14dp"
-        android:src="@drawable/ic_study_black_24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/highschool"
-        app:layout_constraintTop_toBottomOf="@+id/university" />
+        <TextView
+            android:id="@+id/university"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Học Computer Science tại Đại học Công Nghiệp\n Hà Nội (HAUI)"
+            android:textSize="@dimen/small_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/highschool"
+            app:layout_constraintLeft_toRightOf="@id/ic_university"
+            app:layout_constraintTop_toBottomOf="@+id/work" />
 
-    <TextView
-        android:id="@+id/highschool"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:text="Đã học tại THPT Nghĩa Lộ"
-        android:textSize="@dimen/small_text_size"
-        app:layout_constraintBottom_toTopOf="@+id/live"
-        app:layout_constraintLeft_toRightOf="@id/ic_highschool"
-        app:layout_constraintTop_toBottomOf="@+id/university" />
+        <ImageView
+            android:id="@+id/ic_highschool"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/ic_study_black_24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/highschool"
+            app:layout_constraintTop_toTopOf="@+id/highschool" />
 
-    <ImageView
-        android:id="@+id/ic_live"
-        android:layout_width="@dimen/small_icon_size"
-        android:layout_height="@dimen/small_icon_size"
-        android:layout_marginLeft="6dp"
-        android:layout_marginTop="14dp"
-        android:src="@drawable/ic_live_black_24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/live"
-        app:layout_constraintTop_toBottomOf="@+id/highschool" />
+        <TextView
+            android:id="@+id/highschool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Đã học tại THPT Nghĩa Lộ"
+            android:textSize="@dimen/small_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/live"
+            app:layout_constraintLeft_toRightOf="@id/ic_highschool"
+            app:layout_constraintTop_toBottomOf="@+id/university" />
 
-    <TextView
-        android:id="@+id/live"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:text="Sống tại Hà Nội"
-        android:textSize="@dimen/small_text_size"
-        app:layout_constraintBottom_toTopOf="@+id/from"
-        app:layout_constraintLeft_toRightOf="@+id/ic_live"
-        app:layout_constraintTop_toBottomOf="@+id/highschool" />
+        <ImageView
+            android:id="@+id/ic_live"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/ic_live_black_24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/live"
+            app:layout_constraintTop_toTopOf="@+id/live" />
 
-    <ImageView
-        android:id="@+id/ic_from"
-        android:layout_width="@dimen/small_icon_size"
-        android:layout_height="@dimen/small_icon_size"
-        android:layout_marginLeft="6dp"
-        android:layout_marginTop="14dp"
-        android:src="@drawable/ic_from_on_black_24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/from"
-        app:layout_constraintTop_toBottomOf="@+id/live" />
+        <TextView
+            android:id="@+id/live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Sống tại Hà Nội"
+            android:textSize="@dimen/small_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/from"
+            app:layout_constraintLeft_toRightOf="@+id/ic_live"
+            app:layout_constraintTop_toBottomOf="@+id/highschool" />
 
-    <TextView
-        android:id="@+id/from"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:text="Đến từ Nghĩa Lộ"
-        android:textSize="@dimen/small_text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/ic_from"
-        app:layout_constraintTop_toBottomOf="@+id/live" />
+        <ImageView
+            android:id="@+id/ic_from"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/ic_from_on_black_24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/from"
+            app:layout_constraintTop_toTopOf="@+id/from" />
 
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Đến từ Nghĩa Lộ"
+            android:textSize="@dimen/small_text_size"
+            app:layout_constraintLeft_toRightOf="@id/ic_from"
+            app:layout_constraintTop_toBottomOf="@+id/live" />
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
