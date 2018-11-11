@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-    <ScrollView
+
+    <android.support.constraint.ConstraintLayout
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/activity_main">
 
         <ImageView
             android:id="@+id/banner"
             android:layout_width="0dp"
-            android:layout_height="200dp"
+            android:layout_height="250dp"
             android:clickable="true"
             android:scaleType="centerCrop"
             android:src="@drawable/poster"
@@ -26,7 +28,7 @@
             android:id="@+id/photo"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="150dp"
             android:clickable="true"
             android:scaleType="centerCrop"
             android:src="@drawable/avatar"
@@ -257,6 +259,5 @@
             app:layout_constraintLeft_toRightOf="@id/ic_from"
             app:layout_constraintTop_toBottomOf="@+id/live" />
 
-    </ScrollView>
-
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
