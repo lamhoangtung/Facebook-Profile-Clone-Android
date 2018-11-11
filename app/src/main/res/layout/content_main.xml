@@ -259,5 +259,69 @@
             app:layout_constraintLeft_toRightOf="@id/ic_from"
             app:layout_constraintTop_toBottomOf="@+id/live" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            app:layout_constraintTop_toBottomOf="@id/from">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.33"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic5" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.33"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic3" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.33"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic4" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.33"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic2" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.33"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic1" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.33"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+        </LinearLayout>
+
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
