@@ -1,4 +1,4 @@
-# Facebook Profile Clone
+# Facebook Profile Clone on Android
 
 This is a Facebook Profile Screen clone on Android, I made this as a homework assignment for the **Java and Android** course in my university club **HIT** at faculty of **Information Technology** in **Hanoi University of Industry (HAUI)**. This also is the first attemp at understanding how `xml` work and how to create the UI of an Android application, eventhrough my main interest is on **Artificial Intelligence (AI) and Machine Learning (ML)**.
 
