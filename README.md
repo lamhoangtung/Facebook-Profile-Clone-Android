@@ -36,5 +36,8 @@ Feels free to contact me via Github Issue or Facebook Messenger if you have any 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* This project is for **learning purpose.** 
+* The design of this application is belong to **Facebook Inc**
+* All of the vector assest or picture, images assest is either **free** or **owned by me.** 
+* This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
