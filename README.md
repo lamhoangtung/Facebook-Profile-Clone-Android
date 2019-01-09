@@ -27,7 +27,7 @@ So please feels free to contribute to this project. Just create a Pull Request a
 
 * Second year Computer Science student at Hanoi University of Industry
 * Member of HIT Club
-* AI & Machine Learning Intern at Zinza Technology
+* AI Engineer Intern at [Cinnamon AI Labs](cinnamon.is)
 * Github: [lamhoangtung](https://github.com/lamhoangtung)
 * Facebook: [lam.hoangtung.69](https://www.facebook.com/lam.hoangtung.69)
 
